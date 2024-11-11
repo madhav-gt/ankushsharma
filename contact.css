@@ -1,0 +1,370 @@
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.main-container {
+  max-width: 1200px; /* Adjust based on your preference */
+  padding: 0 15px; /* Optional padding */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.content {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+      width: 100%;
+      padding: 0 10px; /* Adjust padding as needed */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --primary-color: #007BFF; /* Primary color */
+  --secondary-color: #0056b3; /* Darker shade for hover effects */
+  --background-color: #f9f9f9; /* Light background */
+  --text-color: #333; /* Text color */
+  --subtle-text-color: #555; /* Subtle text color */
+  --card-background: #ffffff; /* Card background */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Services Section Styling */
+.services {
+  padding: 50px 15px;
+}
+
+.services h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5em; /* Increased font size for emphasis */
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  text-align: center;
+  margin: 10px auto 30px;
+  max-width: 600px;
+  color: var(--subtle-text-color);
+}
+
+/* Service Container Styling */
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Service Card Styling */
+.service-card {
+  background-color: var(--card-background);
+  padding: 25px;
+  width: 300px; /* Slightly increased width for better content fit */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.service-card:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Service Icon Styling */
+.service-icon {
+  font-size: 50px; /* Increased icon size for better visibility */
+  color: var(--primary-color); /* Using primary color for consistency */
+  margin-bottom: 15px;
+}
+
+/* Service Card Title Styling */
+.service-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Service Card Text Styling */
+.service-card p {
+  color: var(--subtle-text-color);
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+ .service-container {
+     flex-direction: column; /* Stack cards on smaller screens */
+     align-items: center; /* Center align cards */
+ }
+
+ .service-card {
+     width: 90%; /* Full width on mobile for better usability */
+     max-width: 400px; /* Limit max width on mobile devices */
+ }
+}
+
+
+
+
+
+
+
+
+
+
+:root {
+  --primary-color: #007BFF; /* Primary color for headings and accents */
+  --secondary-color: #0056b3; /* Darker shade for hover effects */
+  --background-color: #f9f9f9; /* Light background for sections */
+  --text-color: #333; /* Main text color */
+  --subtle-text-color: #555; /* Subtle text color */
+  --card-background: #007BFF; /* Semi-transparent card background */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:  #e9ecf3; /* Overall background color */
+}
+
+/* Contact Section Styling */
+.contact {
+  padding: 60px 15px;
+  background-color: #e9ecf3;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  color: var(--primary-color); /* Primary color */
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 1.2em;
+  color: var(--subtle-text-color); /* Subtle text color */
+}
+
+/* Form Styling */
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--card-background); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Input and Textarea Styling */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 6px;
+  background-color: rgba(249, 249, 249, 0.8); /* Slightly transparent background to blend with the form */
+  font-size: 1em;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: var(--subtle-text-color); /* Placeholder text color */
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-color); /* Highlight effect on focus */
+}
+
+/* Button Styling */
+.contact button {
+  background-color: var(--primary-color); /* Primary button color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition:
+      background-color 0.3s,
+      transform 0.3s; /* Smooth transition on hover */
+}
+
+.contact button:hover {
+  background-color: #2c47b3; /* Darker shade on hover */
+}
+
+/* Contact Information Section Styling */
+.contact-info-section {
+ display: flex;
+ justify-content: space-around; 
+ padding: 40px 15px; 
+ background-color: #e9ecf3; 
+ text-align: center; 
+}
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-info {
+ max-width: 200px; 
+ color: #333; 
+ transition: transform .3s ease; /* Smooth transition for scaling effect */
+}
+
+.contact-info:hover {
+ transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-info p {
+ font-size: 1em; 
+ color: #555; 
+ line-height: 1.5; 
+}
+
+.contact-info strong {
+ font-size: 1.1em; 
+ color: var(--primary-color); /* Matching the primary color */ 
+ display:block; 
+ margin-bottom:8px; 
+}
+
+.contact-info a {
+ color:#3d5af1; 
+ text-decoration:none; 
+ font-size:.9em; 
+}
+
+.contact-info a:hover {
+ text-decoration :underline ; /* Underline on hover for links */
+}
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+  display: flex; 
+  justify-content: space-between; /* Space between items */
+  align-items: center; 
+  padding: 20px 15px; 
+  background-color: #e0f7fa; /* Light cyan background color */
+  color: #333; /* Darker text color for contrast */
+  font-size: 1em; /* Increased base font size */
+  border-top: 1px solid #ccc; /* Light border for separation */
+}
+
+.footer-left {
+  flex: 1; /* Allow this section to take up space */
+  font-size: 1.2em; /* Increase font size for copyright */
+}
+
+.footer-center {
+  flex: 1; /* Center section takes equal space */
+  text-align: center; /* Center align text in this section */
+  font-size: 1.2em; /* Increase font size for design credit */
+}
+
+.footer-right {
+  display: flex; /* Use flexbox for social icons */
+  align-items: center; /* Center align icons vertically */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+  font-size: 1.5em; /* Increase icon size */
+}
+
+.footer p {  
+  margin: 0;  
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {   
+ .footer {   
+     flex-direction: column; /* Stack items on smaller screens */ 
+     align-items: center; /* Center align all items */ 
+ }
+ .footer-left, .footer-center, .footer-right {
+     margin-bottom: 10px; /* Space between stacked items */ 
+ }
+}

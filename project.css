@@ -1,0 +1,161 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.main-container {
+    max-width: 1200px; /* Adjust based on your preference */
+    padding: 0 15px; /* Optional padding */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.content {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #0056b3;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --subtle-text-color: #555;
+    --card-background: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* General Styling for Headings */
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+/* Intro Text Styling */
+.intro-text {
+    text-align: center;
+    margin: 10px auto 30px;
+    max-width: 800px;
+    color: var(--subtle-text-color);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Container Styling */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Projects Container Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Project Card Title Styling */
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Project Card Text Styling */
+.project-card p {
+    color: var(--subtle-text-color);
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Project Card Link Styling */
+.project-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #27ae60;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0px .5rem .5rem rgba(0,0,0,.15);
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+   .projects-container {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .project-card {
+       width: 90%;
+       max-width: 400px;
+   }
+}

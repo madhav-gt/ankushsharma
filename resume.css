@@ -1,0 +1,181 @@
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.main-container {
+    max-width: 1200px; /* Adjust based on your preference */
+    padding: 0 15px; /* Optional padding */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.content {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Education and Skills Section Styling */
+.education, .skills {
+    padding: 3rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+.education h3, .skills h3 {
+    font-size: 2em; 
+    color: var(--primary-color); /* Primary blue for headings */
+    margin-bottom: 1rem;
+    text-align:center ;/* Centered headings*/
+}
+
+/* Timeline Styling for Education Section*/
+.timeline {
+    display:flex ;
+    flex-direction :column ;
+}
+
+.timeline-item {
+    display:flex ;
+    align-items :center ;
+    max-width :700px ;/* Centered with spacing*/
+    margin :1rem auto ;/* Centered with spacing*/
+}
+
+.timeline-icon {
+    font-size :2em ; 
+    margin-right :1rem ;
+}
+
+.timeline-content {
+    border-left :5px solid var(--primary-color);/* Thicker border for emphasis*/
+    padding-left :1rem ;
+}
+
+.timeline-content .date {
+    font-size :0.9em ;
+    color :var(--subtle-text-color);
+}
+
+.timeline-content h4 {
+    font-size :1.5em ; 
+}
+
+.timeline-content p {
+    font-size :1em ; 
+}
+
+/* Skills Bar Styling*/
+.skill-bar {  
+     margin :1.5rem auto ;  
+}
+
+.skill-title {  
+     font-size :1.1em ;  
+}
+
+.progress-bar {  
+     background-image :linear-gradient(to right , rgba(255 ,255 ,255 ,.5) , rgba(255 ,255 ,255 ,.2));/* Gradient effect */  
+     border-radius :12px ;  
+     overflow:hidden ;  
+     position :relative ;  
+     height :25px ;  
+     box-shadow :inset 0px -2px 5px rgba(0 ,0 ,0 ,.1);/* Inner shadow for depth*/  
+}
+
+.progress {  
+     background-color :var(--primary-color);  
+     height :100%;  
+     color :#fff;  
+     text-align:center ;  
+     line-height :25px ;  
+}
+
+/* Hover Effects on Progress Bar*/
+.progress:hover {  
+     background-color :var(--secondary-color);/* Darker blue on hover*/  
+}
+
+/* Animation for Timeline Items*/
+.timeline-item {  
+     opacity :0 ;/* Start hidden */  
+     transform :translateY(20px);/* Start slightly lower */  
+     animation-name :fadeInUp ;/* Animation name */  
+     animation-duration :.5s ;/* Duration of animation */  
+     animation-fill-mode :forwards ;/* Keep the final state after animation ends */  
+}
+
+@keyframes fadeInUp {  
+     to {  
+         opacity :1 ;/* Fade in to full opacity */  
+         transform :translateY(0);/* Move to original position */  
+     }  
+}
+
+/* Responsive Design Enhancements*/   
+@media (max-width :768px) {   
+      .education , .skills {   
+          padding :2rem ;   
+          margin-top :1.5rem ;   
+      }   
+
+      .timeline-icon {   
+          font-size :1.5em ;/* Smaller icons on mobile */   
+      }   
+
+      .timeline-content h4 {   
+          font-size :1.3em ;/* Smaller headings on mobile */   
+      }   
+
+      .skill-title {   
+          font-size :1em ;/* Smaller skill titles on mobile */   
+      }   
+}

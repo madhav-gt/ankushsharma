@@ -1,0 +1,228 @@
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.main-container {
+    max-width: 1200px; /* Adjust based on your preference */
+    padding: 0 15px; /* Optional padding */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.content {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 10px; /* Adjust padding as needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9; /* Overall background color */
+    color: #333; /* Main text color */
+    font-family: 'Arial', sans-serif;
+}
+
+/* About Section Styling */
+#about {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 247, 255, 0.9) 100%);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    position: relative; 
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    z-index: -1; 
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 3em; 
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #007BFF; /* Primary color */
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.25em; 
+    line-height: 1.8;
+    color: #555; /* Subtle text color */
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+/* About Container Styling */
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.long-term-goal {
+    flex: 1;
+    max-width: 600px;
+}
+
+.long-term-goal h3 {
+    font-size: 1.8em; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #007BFF; /* Primary color */
+}
+
+.long-term-goal p {
+    color: #555; /* Subtle text color */
+}
+
+.personal-info {
+   list-style-type: none; 
+   padding-left: 0; 
+}
+
+.personal-info li {
+   font-size: 1em;
+   color:#555; 
+   position: relative; 
+   padding-left: 35px; 
+   transition: transform .3s ease-in-out; /* Smooth transition */
+}
+
+.personal-info li:hover {
+   transform: translateY(-5px) scale(1.02); /* Lift and scale effect */
+}
+
+.icon {
+   position:absolute; 
+   left:-25px; 
+   color:#007BFF; /* Primary color */
+   font-size:.9em; 
+}
+
+.personal-info li strong {
+   color:#333; /* Main text color */
+}
+
+.personal-info a {
+   color:#007BFF; /* Primary color */
+   transition:ease-in-out .3s; 
+}
+
+.personal-info a:hover {
+   color:#0056b3; /* Darker blue on hover */
+}
+
+/* Button Styling */
+.cta-buttons {
+   display:flex;
+   gap:.5rem; 
+   margin-top:.5rem; 
+   justify-content:center; 
+}
+
+.btn {
+   padding:.75rem 2rem; 
+   text-decoration:none; 
+   font-weight:bold; 
+   border-radius:.5rem; 
+   transition:
+       background-color .3s ease,
+       transform .3s ease,
+       box-shadow .3s ease,
+       color .3s ease; /* Added color transition */
+}
+
+.hire-me {
+   background-color:#007BFF; /* Primary button color */
+   color:#fff; 
+}
+
+.hire-me:hover {
+   background-color:#0056b3; /* Darker shade on hover */
+   transform:
+       translateY(-2px) scale(1.05); /* Lift and scale effect */
+   box-shadow:
+       0px .5rem .5rem rgba(0,0,0,.15); 
+}
+
+.download-cv {
+   background-color:#333; /* Secondary button color */
+   color:#fff; 
+}
+
+.download-cv:hover {
+   background-color:#0056b3; /* Darker shade on hover */
+   transform:
+       translateY(-2px) scale(1.05); /* Lift and scale effect */
+   box-shadow:
+       0px .5rem .5rem rgba(0,0,0,.15); 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2.5em; /* Adjusted size for smaller screens */
+    }
+
+    .intro {
+        font-size: 1em; /* Smaller intro text on mobile */
+        padding-left: .5rem;
+        padding-right:.5rem;
+     }
+
+     .long-term-goal h3 {
+         font-size:.8em
+     }
+}
